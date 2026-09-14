@@ -1,6 +1,6 @@
 A Python desktop application with a PyQt5 GUI for exploring and analyzing Yelp business data, backed by a PostgreSQL database of 11,481 businesses.
 
-Features:
+## Features:
 - Location search: Filter businesses by state, city, and ZIP code
 - Category filtering: Narrow results by business category (e.g. Restaurants, Nail Salons, Beauty & Spas)
 - ZIP code statistics: View aggregate stats for a selected ZIP code, including number of businesses, average income, and total population
@@ -13,13 +13,13 @@ Features:
 The app’s main view lets users narrow down from state -> city -> ZIP code, filter by category, and see results update across four linked panels (ZIP code stats, top categories, business listings, and popularity/success rankings).
 
 
-Tech stack:
+## Tech stack:
 - Language: Python
 - GUI framework: PyQt5
 - Database: PostgreSQL
 - Entry point: Milestone3App.py
 
-Running the project:
+## Running the project
 1.	Clone the repository.
 
 2.	Install dependencies (PyQt5, psycopg2 or equivalent PostgreSQL driver).

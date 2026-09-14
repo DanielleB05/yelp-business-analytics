@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Milestone3</class>
+ <widget class="QMainWindow" name="Milestone3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1139</width>
+    <height>985</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CptS 451 Milestone 3</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="stateComboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="cityListWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>70</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="zipcodeListWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="categoryListWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>171</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>250</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="State">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>State</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="City">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>City</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Zipcode">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>50</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zipcode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Category">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Category</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="businessTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>310</y>
+      <width>881</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Address</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>City</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stars</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Review Count</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg Rating</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Checkins</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top Categories:</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="popularTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>610</y>
+      <width>501</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Business Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string># of Checkins</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg Checkins</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="successfulTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>610</y>
+      <width>501</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Business Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Avg Rating</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string># of Reviews</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string># of Checkins</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Success Score</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>590</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Popular Businesses</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>590</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Successful Businesses</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>51</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>250</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame { background-color: #becbd4; }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>591</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame { background-color: #becbd4; }</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Zipcode Statistics</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string># of Businesses:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="populationEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>130</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="avgIncomeEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>90</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="numBusinessesEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Average Income:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Population:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="topCategoriesTable">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>40</y>
+      <width>261</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string># of Businesses</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Category</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Filter on Categories</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select Location</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>1111</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame { background-color: #becbd4 };</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>580</y>
+      <width>1041</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame { background-color: #becbd4 };</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame_4</zorder>
+   <zorder>frame_3</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>frame</zorder>
+   <zorder>stateComboBox</zorder>
+   <zorder>cityListWidget</zorder>
+   <zorder>zipcodeListWidget</zorder>
+   <zorder>categoryListWidget</zorder>
+   <zorder>searchButton</zorder>
+   <zorder>State</zorder>
+   <zorder>City</zorder>
+   <zorder>Zipcode</zorder>
+   <zorder>Category</zorder>
+   <zorder>businessTableWidget</zorder>
+   <zorder>label_4</zorder>
+   <zorder>popularTableWidget</zorder>
+   <zorder>successfulTableWidget</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>refreshButton</zorder>
+   <zorder>clearButton</zorder>
+   <zorder>topCategoriesTable</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1139</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMilestone_2_page_1">
+    <property name="title">
+     <string>Milestone 3 - page 1</string>
+    </property>
+   </widget>
+   <addaction name="menuMilestone_2_page_1"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

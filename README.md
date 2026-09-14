@@ -9,7 +9,7 @@ Features:
 - Popular businesses: Ranks businesses by check-in activity
 - Successful businesses: Ranks businesses by a combination of average rating, review count, and check-ins
 
- <img width="700" height="1023" alt="Screenshot 2026-09-14 145119" src="https://github.com/user-attachments/assets/0aabd18c-938c-493e-9cf3-f3706599ff2d" />
+ <img width="700" height="800" alt="Screenshot 2026-09-14 145119" src="https://github.com/user-attachments/assets/0aabd18c-938c-493e-9cf3-f3706599ff2d" />
 The app’s main view lets users narrow down from state -> city -> ZIP code, filter by category, and see results update across four linked panels (ZIP code stats, top categories, business listings, and popularity/success rankings).
 
 Tech stack:
